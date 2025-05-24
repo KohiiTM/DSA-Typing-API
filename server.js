@@ -145,13 +145,18 @@ async function getTopics() {
     return topicsCache;
   }
 
-  const data = await fs.readFile(
-    path.join(__dirname, "data", "topics.json"),
-    "utf8"
-  );
-  topicsCache = JSON.parse(data).topics;
-  lastCacheTime = now;
-  return topicsCache;
+  try {
+    const data = await fs.readFile(path.join(__dirname, "topics.json"), "utf8");
+    topicsCache = JSON.parse(data).topics;
+    lastCacheTime = now;
+    return topicsCache;
+  } catch (error) {
+    logger.error("Error reading topics file", {
+      error: error.message,
+      path: path.join(__dirname, "topics.json"),
+    });
+    throw error;
+  }
 }
 
 // Health check endpoint
@@ -163,11 +168,19 @@ app.get("/health", (req, res) => {
 app.get("/api/topics", async (req, res) => {
   try {
     const topics = await getTopics();
-    logger.info("Successfully fetched all topics");
+    logger.info("Successfully fetched all topics", { count: topics.length });
     res.json(topics);
   } catch (error) {
-    logger.error("Failed to fetch topics", { error: error.message });
-    res.status(500).json({ error: "Failed to fetch topics" });
+    logger.error("Failed to fetch topics", {
+      error: error.message,
+      stack: error.stack,
+      code: error.code,
+    });
+    res.status(500).json({
+      error: "Failed to fetch topics",
+      details:
+        process.env.NODE_ENV === "development" ? error.message : undefined,
+    });
   }
 });
 
