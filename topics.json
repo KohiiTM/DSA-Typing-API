@@ -1,0 +1,267 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "category": "Data Structures",
+      "topic": "Hash Table",
+      "content": "A hash table is a data structure that implements an associative array abstract data type a structure that can map keys to values It uses a hash function to compute an index into an array of buckets or slots from which the desired value can be found"
+    },
+    {
+      "id": 2,
+      "category": "Data Structures",
+      "topic": "Linked List",
+      "content": "A linked list is a linear data structure where elements are stored in nodes and each node points to the next node in the sequence Unlike arrays linked lists dont require contiguous memory allocation making them more flexible for dynamic data"
+    },
+    {
+      "id": 3,
+      "category": "Data Structures",
+      "topic": "Stack",
+      "content": "A stack is a linear data structure that follows the Last In First Out LIFO principle The main operations are push add an element pop remove the top element and peek view the top element"
+    },
+    {
+      "id": 4,
+      "category": "Data Structures",
+      "topic": "Queue",
+      "content": "A queue is a linear data structure that follows the First In First Out FIFO principle The main operations are enqueue add an element and dequeue remove an element"
+    },
+    {
+      "id": 5,
+      "category": "Data Structures",
+      "topic": "Binary Tree",
+      "content": "A binary tree is a hierarchical data structure where each node has at most two children referred to as the left child and right child Binary trees are commonly used for searching and sorting operations"
+    },
+    {
+      "id": 6,
+      "category": "Data Structures",
+      "topic": "Heap",
+      "content": "A heap is a specialized tree based data structure that satisfies the heap property In a max heap the key at root must be maximum among all keys present in the binary tree"
+    },
+    {
+      "id": 7,
+      "category": "Data Structures",
+      "topic": "Trie",
+      "content": "A trie is a tree like data structure used to store a dynamic set of strings where the keys are usually strings Each node represents a common prefix of its children"
+    },
+    {
+      "id": 8,
+      "category": "Data Structures",
+      "topic": "Graph",
+      "content": "A graph is a non linear data structure consisting of vertices and edges that connect these vertices Graphs can be directed or undirected and can have cycles"
+    },
+    {
+      "id": 9,
+      "category": "Algorithms",
+      "topic": "QuickSort",
+      "content": "QuickSort is a highly efficient comparison based in place sorting algorithm It works by selecting a pivot element and partitioning the array around it placing smaller elements before the pivot and larger elements after it"
+    },
+    {
+      "id": 10,
+      "category": "Algorithms",
+      "topic": "Binary Search",
+      "content": "Binary Search is an efficient algorithm for finding an element in a sorted array It works by repeatedly dividing the search interval in half making it much faster than linear search for large datasets"
+    },
+    {
+      "id": 11,
+      "category": "Algorithms",
+      "topic": "Dijkstra's Algorithm",
+      "content": "Dijkstras algorithm is used to find the shortest path between nodes in a graph The algorithm maintains a set of unvisited nodes and assigns tentative distances to all nodes"
+    },
+    {
+      "id": 12,
+      "category": "Algorithms",
+      "topic": "Dynamic Programming",
+      "content": "Dynamic Programming is a method for solving complex problems by breaking them down into simpler subproblems It is applicable when the subproblems overlap"
+    },
+    {
+      "id": 13,
+      "category": "Algorithms",
+      "topic": "Breadth First Search (BFS)",
+      "content": "Breadth First Search BFS is an algorithm for traversing or searching tree or graph data structures It starts at the tree root and explores all nodes at the present depth before moving on to nodes at the next depth level"
+    },
+    {
+      "id": 14,
+      "category": "Algorithms",
+      "topic": "Depth First Search (DFS)",
+      "content": "Depth First Search DFS is an algorithm for traversing or searching tree or graph data structures The algorithm starts at the root node and explores as far as possible along each branch before backtracking"
+    },
+    {
+      "id": 15,
+      "category": "Algorithms",
+      "topic": "Merge Sort",
+      "content": "Merge Sort is a divide and conquer algorithm that recursively breaks down a problem into two or more subproblems until they become simple enough to solve directly"
+    },
+    {
+      "id": 16,
+      "category": "Algorithms",
+      "topic": "Kadane's Algorithm",
+      "content": "Kadanes algorithm is used to find the maximum sum of a contiguous subarray in an array of numbers It maintains the maximum sum ending at each position"
+    },
+    {
+      "id": 17,
+      "category": "System Design",
+      "topic": "Load Balancing",
+      "content": "Load balancing is a technique used to distribute incoming network traffic across multiple servers to ensure no single server becomes overwhelmed This improves the reliability and availability of applications"
+    },
+    {
+      "id": 18,
+      "category": "System Design",
+      "topic": "Caching",
+      "content": "Caching is a technique that stores frequently accessed data in a faster storage medium to improve performance Common caching strategies include LRU Least Recently Used and LFU Least Frequently Used"
+    },
+    {
+      "id": 19,
+      "category": "System Design",
+      "topic": "Database Indexing",
+      "content": "Database indexing is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and storage space to maintain the index data structure"
+    },
+    {
+      "id": 20,
+      "category": "System Design",
+      "topic": "Microservices Architecture",
+      "content": "Microservices architecture is a method of developing software applications as a suite of independently deployable small modular services where each service runs a unique process"
+    },
+    {
+      "id": 21,
+      "category": "System Design",
+      "topic": "Message Queues",
+      "content": "Message queues provide an asynchronous communications protocol meaning that the sender and receiver of the message do not need to interact with the message queue at the same time"
+    },
+    {
+      "id": 22,
+      "category": "System Design",
+      "topic": "Rate Limiting",
+      "content": "Rate limiting is a strategy used to control the rate of requests a client can make to an API within a specified time period to prevent abuse and ensure fair usage"
+    },
+    {
+      "id": 23,
+      "category": "System Design",
+      "topic": "Database Sharding",
+      "content": "Database sharding is a type of horizontal partitioning that splits large databases into smaller faster more easily managed parts called data shards"
+    },
+    {
+      "id": 24,
+      "category": "System Design",
+      "topic": "Circuit Breakers",
+      "content": "Circuit breakers are used to prevent cascading failures in distributed systems by stopping the flow of requests to a failing service and allowing it to recover"
+    },
+    {
+      "id": 25,
+      "category": "Problem Solving",
+      "topic": "Sliding Window Technique",
+      "content": "The sliding window technique is used to solve problems involving arrays or strings where we need to find or calculate something among all subarrays or substrings of a certain size"
+    },
+    {
+      "id": 26,
+      "category": "Problem Solving",
+      "topic": "Two Pointer Technique",
+      "content": "Two pointer technique is used to solve problems involving arrays or strings where we need to find a pair of elements that satisfy certain conditions"
+    },
+    {
+      "id": 27,
+      "category": "Problem Solving",
+      "topic": "Binary Search Applications",
+      "content": "Binary search can be used to find the position of a target value within a sorted array It compares the target value to the middle element of the array"
+    },
+    {
+      "id": 28,
+      "category": "Problem Solving",
+      "topic": "Greedy Algorithms",
+      "content": "Greedy algorithms make the locally optimal choice at each stage with the hope of finding a global optimum They are used when a problem can be solved by making a series of choices"
+    },
+    {
+      "id": 29,
+      "category": "Problem Solving",
+      "topic": "Backtracking",
+      "content": "Backtracking is a general algorithm for finding all solutions to some computational problems that incrementally builds candidates to the solutions and abandons a candidate as soon as it determines that it cannot possibly be completed"
+    },
+    {
+      "id": 30,
+      "category": "Problem Solving",
+      "topic": "Floyd Cycle Finding",
+      "content": "The Floyd cycle finding algorithm is used to detect cycles in linked lists It uses two pointers that move at different speeds through the sequence of values"
+    },
+    {
+      "id": 31,
+      "category": "Problem Solving",
+      "topic": "Topological Sorting",
+      "content": "Topological sorting is a linear ordering of vertices in a directed acyclic graph such that for every directed edge from vertex A to vertex B A comes before B in the ordering"
+    },
+    {
+      "id": 32,
+      "category": "Problem Solving",
+      "topic": "Boyer-Moore Voting",
+      "content": "The Boyer Moore voting algorithm is used to find the majority element in an array It works by maintaining a count of the current candidate for majority element"
+    },
+    {
+      "id": 33,
+      "category": "Data Structures",
+      "topic": "AVL Tree",
+      "content": "An AVL tree is a self balancing binary search tree where the heights of the left and right subtrees of any node differ by at most one This balancing property ensures that the tree remains balanced and operations like search insert and delete take O log n time"
+    },
+    {
+      "id": 34,
+      "category": "Data Structures",
+      "topic": "Red-Black Tree",
+      "content": "A red black tree is a self balancing binary search tree where each node has an extra bit for denoting the color of the node either red or black The tree maintains balance through a set of color properties that ensure the tree remains approximately balanced"
+    },
+    {
+      "id": 35,
+      "category": "Data Structures",
+      "topic": "B-Tree",
+      "content": "A B tree is a self balancing tree data structure that maintains sorted data and allows searches sequential access insertions and deletions in logarithmic time It is commonly used in databases and file systems where large amounts of data need to be stored and accessed efficiently"
+    },
+    {
+      "id": 36,
+      "category": "Data Structures",
+      "topic": "Skip List",
+      "content": "A skip list is a probabilistic data structure that allows O log n search complexity as well as O log n insertion complexity It uses multiple layers of linked lists with each layer skipping over some elements to provide fast search capabilities"
+    },
+    {
+      "id": 37,
+      "category": "Data Structures",
+      "topic": "Segment Tree",
+      "content": "A segment tree is a tree data structure used for storing information about intervals or segments It allows querying which of the stored segments contain a given point and is particularly useful for range queries and range updates"
+    },
+    {
+      "id": 38,
+      "category": "Data Structures",
+      "topic": "Fenwick Tree",
+      "content": "A Fenwick tree or binary indexed tree is a data structure that can efficiently update elements and calculate prefix sums in a table of numbers It is particularly useful for cumulative frequency tables and range sum queries"
+    },
+    {
+      "id": 39,
+      "category": "Algorithms",
+      "topic": "Kruskal's Algorithm",
+      "content": "Kruskals algorithm is a greedy algorithm that finds a minimum spanning tree for a connected weighted graph It finds a subset of the edges that forms a tree that includes every vertex where the total weight of all the edges in the tree is minimized"
+    },
+    {
+      "id": 40,
+      "category": "Algorithms",
+      "topic": "Prim's Algorithm",
+      "content": "Prims algorithm is a greedy algorithm that finds a minimum spanning tree for a connected weighted undirected graph It finds a subset of the edges that forms a tree that includes every vertex where the total weight of all the edges in the tree is minimized"
+    },
+    {
+      "id": 41,
+      "category": "Algorithms",
+      "topic": "Bellman-Ford Algorithm",
+      "content": "The Bellman Ford algorithm is an algorithm that computes shortest paths from a single source vertex to all other vertices in a weighted digraph It is slower than Dijkstras algorithm but can handle negative edge weights"
+    },
+    {
+      "id": 42,
+      "category": "Algorithms",
+      "topic": "Floyd-Warshall Algorithm",
+      "content": "The Floyd Warshall algorithm is an algorithm for finding shortest paths in a weighted graph with positive or negative edge weights but with no negative cycles It can find the shortest path between all pairs of vertices"
+    },
+    {
+      "id": 43,
+      "category": "Algorithms",
+      "topic": "A* Search Algorithm",
+      "content": "A star is a pathfinding algorithm that finds the shortest path between two points It uses a heuristic function to estimate the cost from the current node to the goal and combines this with the actual cost from the start to the current node"
+    },
+    {
+      "id": 44,
+      "category": "Algorithms",
+      "topic": "Rabin-Karp Algorithm"
+    }
+  ]
+}
